@@ -1,0 +1,81 @@
+{
+  "__schema": {
+    "types": [
+      {
+        "kind": "INTERFACE",
+        "name": "Match",
+        "possibleTypes": [
+          {
+            "name": "ContractsTriggerMatch"
+          },
+          {
+            "name": "EventsTriggerMatch"
+          },
+          {
+            "name": "TransactionsTriggerMatch"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "Trigger",
+        "possibleTypes": [
+          {
+            "name": "EventsTrigger"
+          },
+          {
+            "name": "ContractsTrigger"
+          },
+          {
+            "name": "TransactionsTrigger"
+          }
+        ]
+      },
+      {
+        "kind": "INTERFACE",
+        "name": "Action",
+        "possibleTypes": [
+          {
+            "name": "EmailAction"
+          },
+          {
+            "name": "WebhookAction"
+          }
+        ]
+      },
+      {
+        "kind": "UNION",
+        "name": "Response",
+        "possibleTypes": [
+          {
+            "name": "MailResponse"
+          },
+          {
+            "name": "WebhookResponse"
+          },
+          {
+            "name": "ErrorResponse"
+          }
+        ]
+      },
+      {
+        "kind": "UNION",
+        "name": "Payload",
+        "possibleTypes": [
+          {
+            "name": "MailPayload"
+          },
+          {
+            "name": "EventsTriggerWebhookPayload"
+          },
+          {
+            "name": "TransactionsTriggerWebhookPayload"
+          },
+          {
+            "name": "ContractsTriggerWebhookPayload"
+          }
+        ]
+      }
+    ]
+  }
+}
