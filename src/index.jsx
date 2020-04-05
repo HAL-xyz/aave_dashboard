@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 
 // GraphQL
 import { ApolloProvider } from '@apollo/react-hooks';
